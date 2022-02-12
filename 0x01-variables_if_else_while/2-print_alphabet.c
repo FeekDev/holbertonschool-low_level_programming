@@ -16,7 +16,7 @@ char ch;
 
 for (ch = 'a' ; ch <= 'z' ; ch++)
 {
-putchar("\n", ch);
+putchar(ch'\n');
 }
   /* your code goes there */
 return (0);
