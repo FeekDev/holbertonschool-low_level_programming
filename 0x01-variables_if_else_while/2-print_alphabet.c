@@ -18,6 +18,7 @@ for (ch = 'a' ; ch <= 'z' ; ch++)
 {
 putchar(ch);
 }
-  /* your code goes there */
+putchar('\n');
+
 return (0);
 }
