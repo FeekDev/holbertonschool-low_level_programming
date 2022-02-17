@@ -17,7 +17,7 @@ for (row = 0; row <= 9; row++)
 	{
 	result = (row * col);
 
-	if (result == 0)
+	if (col == 0)
 	{
 	_putchar('0' + result);
 	}
