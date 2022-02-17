@@ -81,4 +81,11 @@ void jack_bauer(void);
  **/
 
 void times_table(void);
+
+/**
+ *
+ * adds two integers and returns the result
+ *
+ **/
+int add(int, int);
 #endif /* _MAIN_H_ */
