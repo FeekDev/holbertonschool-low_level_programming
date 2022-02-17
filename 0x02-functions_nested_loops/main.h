@@ -64,6 +64,14 @@ int _abs(int n);
  *
  **/
 
-int print_last_digit(int);
+int print_last_digit(int n);
+
+/**
+ *
+ * that prints the every minutes in a day
+ *
+ **/
+
+void jack_bauer(void);
 
 #endif /* _MAIN_H_ */
