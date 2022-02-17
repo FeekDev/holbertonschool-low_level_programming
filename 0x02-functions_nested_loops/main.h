@@ -24,7 +24,7 @@ void print_alphabet(void);
  *
  **/
 
-void print_alphabet_x10(void); 
+void print_alphabet_x10(void);
 
 /**
  *_islower - checks for lowercase character
@@ -57,5 +57,13 @@ int print_sign(int n);
  **/
 
 int _abs(int n);
+
+/**
+ *
+ * that prints the last digit of a number, with mod
+ *
+ **/
+
+int print_last_digit(int n);
 
 #endif /* _MAIN_H_ */
