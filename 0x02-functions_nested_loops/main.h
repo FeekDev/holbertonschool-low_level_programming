@@ -88,4 +88,17 @@ void times_table(void);
  *
  **/
 int add(int, int);
+
+#include "main.h"
+
+/**
+ * 
+ *print all number <98 && >98
+ *
+ */
+
+void print_to_98(int n);
+
+
+
 #endif /* _MAIN_H_ */
