@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code.
- *
+ *  _isupper - check the uppercase.
+ *@c: is the variable local
  * Return: Always 0.
  */
 
@@ -14,6 +14,6 @@ int _isupper(int c)
 	}
 	else
 	{
-	return (0);	
+	return (0);
 	}
 }
