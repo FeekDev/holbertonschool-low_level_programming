@@ -1,5 +1,13 @@
 /**
  *
+ *prints 
+ *
+ **/
+
+int _putchar(char c);
+
+/**
+ *
  *This function that checks for uppercase character
  *
  **/
@@ -22,3 +30,9 @@ int _isdigit(int c);
 
 int mul(int a, int b);
 
+/**
+ *
+ *function that prints the numbers, from 0 to 9
+ **/
+
+void print_numbers(void);
