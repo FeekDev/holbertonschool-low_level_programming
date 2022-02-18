@@ -14,3 +14,11 @@ int _isupper(int c);
 
 int _isdigit(int c);
 
+/**
+ *This function that multiplies two integers
+ *
+ * Return: Always 0.
+ */
+
+int mul(int a, int b);
+
