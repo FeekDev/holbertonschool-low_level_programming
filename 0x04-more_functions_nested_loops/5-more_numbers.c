@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  *more_numbers - function that prints the numbers int .
@@ -28,6 +29,6 @@ void more_numbers(void)
 
 	i++;
 	num = 0;
-	_putchar('\n');
+	printf("\n");
 	}
 }
