@@ -8,12 +8,11 @@
 
 int main(void)
 {
-char alphabe = 'z';
+int alphabe == 0;
 
-while (alphabe >= 'a')
+while (alphabe >= 16)
 {
-putchar(alphabe);
-alphabe--;
+putchar("%x");
 }
 putchar('\n');
 

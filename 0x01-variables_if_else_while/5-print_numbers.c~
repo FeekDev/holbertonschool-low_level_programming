@@ -12,12 +12,13 @@
 /* betty style doc for function main goes there. */
 int main(void)
 {
-char ch;
+char N;
 
-for (ch = 'a' ; ch <= 'z' ; ch++)
+for (N = '0' ; N < '10'; N++)
 {
-putchar(ch);
+putchar(N);
 }
+
 putchar('\n');
 
 return (0);
