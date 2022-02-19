@@ -36,3 +36,11 @@ int mul(int a, int b);
  **/
 
 void print_numbers(void);
+
+/**
+ *
+ *that prints the numbers,do not print 2 and 4
+ **/
+
+void print_most_numbers(void);
+
