@@ -54,3 +54,11 @@ void print_rev(char *s);
  **/
 
 void rev_string(char *s);
+
+/**
+ *
+ *This function that prints every other character of a string.
+ *
+ */
+
+void puts2(char *str);
