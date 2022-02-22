@@ -46,3 +46,11 @@ int _putchar(char c);
  **/
 
 void print_rev(char *s);
+
+/**
+ *
+ *This function reverse the string
+ *
+ **/
+
+void rev_string(char *s);
