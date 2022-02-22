@@ -39,3 +39,10 @@ void _puts(char *str);
 
 int _putchar(char c);
 
+/**
+ *
+ *This function reverse the string
+ *
+ **/
+
+void print_rev(char *s);
