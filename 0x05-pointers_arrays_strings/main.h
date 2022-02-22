@@ -22,3 +22,20 @@ void swap_int(int *a, int *b);
 
 int _strlen(char *s);
 
+/**
+ *
+ *this function that prints a string, followed by a new line, to stdout
+ *
+ **/
+
+void _puts(char *str);
+
+/**
+ *
+ *This function is like to puts
+ *
+ **/
+
+
+int _putchar(char c);
+
