@@ -4,6 +4,14 @@
  *
  **/
 
+int _strlen(char *s);
+
+/**
+ *
+ *the function concatenates two strings
+ *
+ **/
+
 char *_strcat(char *dest, char *src);
 
 /**
@@ -16,8 +24,8 @@ char *_strncat(char *dest, char *src, int n);
 
 /**
  *
- * This function that copies a string
+ *this function that compares two strings
  *
  **/
 
-char *_strncpy(char *dest, char *src, int n);
+int _strcmp(char *s1, char *s2);
