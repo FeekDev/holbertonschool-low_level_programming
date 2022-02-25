@@ -2,10 +2,9 @@
 #include <stdio.h>
 
 /**
- *_strncpy - concatenate two arrays
- *@dest: is the destination
- *@src: is the source
- *@n: is the arameter of function
+ *_strcmp - compares two strings
+ *@s1: is the destination
+ *@s2: is the source
  * Return: Always dest.
  **/
 int _strcmp(char *s1, char *s2)
