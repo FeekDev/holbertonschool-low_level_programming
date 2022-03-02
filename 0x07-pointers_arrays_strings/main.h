@@ -37,3 +37,11 @@ char *_memcpy(char *dest, char *src, unsigned int n);
  **/
 
 char *_strchr(char *s, char c);
+
+/**
+ *
+ *that gets the length of a prefix substring
+ *
+ **/ 
+
+unsigned int _strspn(char *s, char *accept);
