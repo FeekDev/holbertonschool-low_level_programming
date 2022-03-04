@@ -20,8 +20,9 @@ int mult;
 		mult = a * b;
 		printf("%d\n", mult);
 
-		if (argc < 0)
+		if (argc == 1)
 			printf("Error\n");
+		return (1);
 
 	return (0);
 }
