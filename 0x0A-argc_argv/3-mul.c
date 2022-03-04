@@ -15,14 +15,16 @@ int a, b;
 int mult;
 
 		if (argc == 3)
+		{
 		a = atoi(argv[1]);
 		b = atoi(argv[2]);
 		mult = a * b;
 		printf("%d\n", mult);
-
-		if (argc == 1)
-			printf("Error\n");
+		}
+		else
+		{
+		printf("Error\n");
 		return (1);
-
-	return (0);
+		}
+return (0);
 }
