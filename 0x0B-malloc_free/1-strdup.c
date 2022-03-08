@@ -28,11 +28,17 @@ char *_strdup(char *str)
 
 	arr = malloc(len * sizeof(char));/*Dinamic memory and copy */
 
+	if (arr == NULL)/*The status of memory*/
+	{
+	return (NULL);
+	}
+
 	i = 0;
 	while (i < len)/*pointers */
 	{
 		*(arr + i) = *(str + i);
 		i++;
 	}
+	*(arr + i) = '\0';
 	return (arr);
 }
