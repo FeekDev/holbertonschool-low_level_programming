@@ -45,6 +45,7 @@ i = back;
 		*(concat + i) = *(s2 + f);
 		i++, f++;
 	}
+	*(concat + i) = '\0';
 
 return (concat);
 }
