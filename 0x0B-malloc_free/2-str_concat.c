@@ -27,7 +27,7 @@ char *str_concat(char *s1, char *s2)
 
 	while (*(s2 + s))
 		f++, s++;
-	s++;/*Add the null*/
+	s++;/*Add the null at the finish of the array*/
 
 	concat = malloc((s + d) *  sizeof(char));
 
@@ -46,6 +46,5 @@ i = back;
 		i++, f++;
 	}
 	*(concat + i) = '\0';
-
-return (concat);
+	return (concat);
 }
