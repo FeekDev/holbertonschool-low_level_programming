@@ -49,6 +49,6 @@ i = 0;
 		*(concat + i) = *(s2 + f);
 		i++, f++;
 	}
-	
+
 	return (concat);
 }
