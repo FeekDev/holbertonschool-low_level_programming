@@ -1,24 +1,28 @@
 #include "lists.h"
 
+/**
+ * print_list - is the function ith pointer
+ * @h: the pointer
+ * Return: return number nodes
+ **/
+
 size_t print_list(const list_t *h)
 {
-    unsigned int count = 0;
+	unsigned int count = 0;
 
-    list_t *ptr = NULL;
+	if (h->str == NULL)
+	{
+		printf("[0] (nil)\n");
+	}
 
-    ptr = h;
-
-    if (ptr->str == NULL)
-    {
-        printf("[0] (nil)");
-    }
-
-    while (ptr != NULL)
-    {
-        printf("[%d] %s\n",ptr->len, ptr->str);
-        count ++;
-        ptr = ptr->next;
-    }
-
-    return count;
+	while (h != NULL)
+	{
+		if (h->str != NULL)
+		{
+			printf("[%d] %s\n", h->len, h->str);
+		}
+		count++;
+		h = h->next;
+	}
+	return (count);
 }
