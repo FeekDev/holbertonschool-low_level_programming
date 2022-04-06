@@ -1,19 +1,33 @@
 #include "main.h"
 
+/**
+ * read_textfile - the function read and write
+ *
+ * @filename: this param send the file
+ * @letters: this param give the number of letters
+ * Return: the lenght of ssize_t
+ */
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-    int fd, out;
-    char *buf = malloc(sizeof(char *) * letters);
+	int fd, out;
+	char *buf = malloc(sizeof(char *) * letters);
 
-    fd = open(filename, O_RDONLY, 0400);
+	if (filename == NULL)
+		return (0);
 
-    if (fd == -1)
-    return (0);
+	fd = open(filename, O_RDONLY, 0400);
 
-    out = read(fd, buf, letters);
-    write(STDOUT_FILENO, buf, out);
+	if (fd == -1)
+		return (0);
 
-    free(buf);
-    close(fd);
-    return (out);
+	out = read(fd, buf, letters);
+	write(STDOUT_FILENO, buf, out);
+
+	if (write == -1)
+		return (0);
+
+	free(buf);
+	close(fd);
+	return (out);
 }
