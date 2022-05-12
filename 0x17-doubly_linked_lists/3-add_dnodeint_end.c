@@ -10,11 +10,12 @@
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
     /* allocate the memory and struct*/
-	dlistint_t *new_node = new_node;
+	dlistint_t *new_node = (dlistint_t *)malloc(sizeof(dlistint_t));
     /* temporary node*/
 	dlistint_t *temp = *head;
-
-	new_node = malloc(sizeof(dlistint_t));
+	/* in case of fail*/
+	if (new_node == NULL)
+		return (NULL);
 	/* allocat the data*/
 	new_node->n = n;
     /* set the head */
@@ -36,5 +37,6 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	temp->next = new_node;
 	/* assign prev of newNode to temp*/
 	 new_node->prev = temp;
-return (0);
+
+return (new_node);
 }
