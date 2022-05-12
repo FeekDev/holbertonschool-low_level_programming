@@ -11,7 +11,7 @@
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	/* allow memory and variable*/
-	dlistint_t *temp, *found = NULL;
+	dlistint_t *temp;
 	unsigned int i = 0;
 	/* in case node doesn't exist */
 	if (head == NULL)
@@ -25,10 +25,10 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	{
 		temp = temp->next;
 		i++;
-		if (i == index)
-		{
-			found = temp;
-		}
+		if (head == NULL)
+	{
+		return (NULL);
 	}
-	return (found);
+	}
+	return (temp);
 }
