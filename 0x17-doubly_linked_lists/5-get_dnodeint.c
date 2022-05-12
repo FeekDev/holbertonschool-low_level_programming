@@ -23,12 +23,12 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	/* traversal and conditional*/
 	while (i != index)
 	{
-		temp = temp->next;
-		i++;
 		if (head == NULL)
 	{
 		return (NULL);
 	}
+	temp = temp->next;
+	i++;
 	}
 	return (temp);
 }
