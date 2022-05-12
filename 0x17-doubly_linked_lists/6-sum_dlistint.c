@@ -9,11 +9,16 @@
 
 int sum_dlistint(dlistint_t *head)
 {
-	/* allow memory*/
-	dlistint_t *temp;
+	/* allow memory and init variable*/
 	int sum = 0;
+	dlistint_t *temp;
+	/* in case of list empty*/
+	if (head == NULL)
+	{
+		return (0);
+	}
 	/* pointer in head*/
-	temp = head;
+	temp = (head);
 	/* traversal and sum*/
 	while (temp->next != NULL)
 	{
