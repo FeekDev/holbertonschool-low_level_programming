@@ -13,6 +13,11 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	/* allow memory and variable*/
 	dlistint_t *temp, *found = NULL;
 	unsigned int i = 0;
+	/* in case node doesn't exist */
+	if (head == NULL)
+	{
+		return (NULL);
+	}
 	/* point in head*/
 	temp = (head);
 	/* traversal and conditional*/
@@ -25,9 +30,5 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 			found = temp;
 		}
 	}
-	if (found == NULL)
-	{
-		return (NULL);
-	}
-return (found);
+	return (found);
 }
