@@ -21,7 +21,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	/* point in head*/
 	temp = (head);
 	/* traversal and conditional*/
-	while (i != index)
+	while (i < index)
 	{
 		if (head == NULL)
 		{
