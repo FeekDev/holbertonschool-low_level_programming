@@ -11,12 +11,12 @@
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	/* allow memory and variable*/
-	dlistint_t *temp, *found;
-	unsigned int i;
+	dlistint_t *temp, *found = NULL;
+	unsigned int i = 0;
 	/* point in head*/
 	temp = head;
 	/* traversal and conditional*/
-	while (temp->next != NULL)
+	while (i != index)
 	{
 		temp = temp->next;
 		i++;
@@ -24,6 +24,10 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 		{
 			found = temp;
 		}
+	}
+	if (found == NULL)
+	{
+		return (NULL);
 	}
 return (found);
 }
