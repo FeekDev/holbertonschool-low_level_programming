@@ -17,12 +17,20 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	if (new_node == NULL)
 		return (NULL);
 
-	if (*head == NULL)
+	if (head == NULL)
 		return (NULL);
 	/* allocat the data*/
 	new_node->n = n;
-	/* set the head */
+    /* set the head */
 	new_node->next = NULL;
+
+	/* if linkes list is null*/
+	if (*head == NULL)
+	{
+		new_node->prev = NULL;
+		*head = new_node;
+		return (new_node);
+	}
 	/* Traversal*/
 	while (temp->next != NULL)
 	{
@@ -32,5 +40,6 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	temp->next = new_node;
 	/* assign prev of newNode to temp*/
 	 new_node->prev = temp;
+
 return (new_node);
 }
