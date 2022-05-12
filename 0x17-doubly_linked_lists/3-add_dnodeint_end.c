@@ -12,12 +12,9 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
     /* allocate the memory and struct*/
 	dlistint_t *new_node = malloc(sizeof(dlistint_t));
     /* temporary node*/
-	dlistint_t *temp = *head;
+	dlistint_t *temp = (*head);
 	/* in case of fail*/
 	if (new_node == NULL)
-		return (NULL);
-
-	if (head == NULL)
 		return (NULL);
 	/* allocat the data*/
 	new_node->n = n;
@@ -25,10 +22,10 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	new_node->next = NULL;
 
 	/* if linkes list is null*/
-	if (*head == NULL)
+	if ((*head) == NULL)
 	{
 		new_node->prev = NULL;
-		*head = new_node;
+		(*head) = new_node;
 		return (new_node);
 	}
 	/* Traversal*/
