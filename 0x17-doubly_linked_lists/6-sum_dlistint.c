@@ -20,10 +20,10 @@ int sum_dlistint(dlistint_t *head)
 	/* pointer in head*/
 	temp = head;
 	/* traversal and sum*/
-	while (temp->next != NULL)
+	while (temp)
 	{
-		temp = temp->next;
 		sum += temp->n;
+		temp = temp->next;
 	}
 	return (sum);
 }
