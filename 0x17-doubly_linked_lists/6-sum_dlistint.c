@@ -18,12 +18,12 @@ int sum_dlistint(dlistint_t *head)
 		return (0);
 	}
 	/* pointer in head*/
-	temp = (head);
+	temp = head;
 	/* traversal and sum*/
 	while (temp->next != NULL)
 	{
 		temp = temp->next;
 		sum += temp->n;
 	}
-return (sum);
+	return (sum);
 }
