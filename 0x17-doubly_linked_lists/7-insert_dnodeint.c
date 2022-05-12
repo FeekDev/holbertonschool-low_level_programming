@@ -11,10 +11,13 @@
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	/* allow memory*/
-	dlistint_t *front, *back, *new_node = new_node;
-	unsigned int i = 0;
+	dlistint_t *prev, *new_node = new_node;
+	unsigned int i = 1;
 
 	new_node = malloc(sizeof(dlistint_t));
+
+	/* set prev head*/
+	prev = (*h);
 	/* in case of fail*/
 	if (new_node == NULL)
 	{
@@ -24,22 +27,18 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	{
 		return (NULL);
 	}
-	/* pointer head*/
-	front = (*h);
-	/* traversal and condition*/
+	/* set next of newNode*/
 	while (i <= idx)
 	{
 		if (i == idx)
 		{
 			new_node->n = n;
-			new_node->prev = back;
-			new_node->next = front;
-			/* connect the new node*/
-			back->next = new_node;
-			front->prev = new_node;
+			new_node->next = prev->next;
+			prev->next = new_node;
+			new_node->prev = prev;
+			new_node->next->prev = new_node;
 		}
-		front = front->next;
-		back = front->prev;
+		prev = prev->next;
 		i++;
 	}
 	return (new_node);
