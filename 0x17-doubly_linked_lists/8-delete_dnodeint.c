@@ -1,9 +1,16 @@
 #include "lists.h"
 
+/**
+ * delete_dnodeint_at_index - function
+ *
+ * @head: double pointer
+ * @index: data
+ * Return: int
+ */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	/* allow memory*/
-    dlistint_t *prim = *head, *list;
+	dlistint_t *prim = *head, *list;
 	unsigned int i = 0;
 
 	if (*head == NULL)
