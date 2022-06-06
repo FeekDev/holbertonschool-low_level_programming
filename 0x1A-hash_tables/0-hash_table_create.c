@@ -14,7 +14,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (!ha_table)
 		return (NULL);
     /* Allocate pointers to the head nodes. */
-	ha_table->array = malloc(sizeof(hash_node_t *) * size);
+	ha_table->array = malloc(size * sizeof(hash_node_t *));
 	if (!ha_table->array)
 	{
 		free(ha_table);
