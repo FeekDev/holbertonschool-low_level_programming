@@ -13,6 +13,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	ha_table = malloc(sizeof(hash_table_t));
 	if (!ha_table)
 		return (NULL);
+    ha_table->size = size;
     /* Allocate pointers to the head nodes. */
 	ha_table->array = malloc(sizeof(hash_node_t *) * size);
 	if (!ha_table->array)
@@ -22,10 +23,6 @@ hash_table_t *hash_table_create(unsigned long int size)
 	}
 
 	for (i = 0; i < size; i++)
-	{
-		ha_table->array[i] = NULL;
-	}
-
-	ha_table->size = size;
-	return (ha_table);
+        ha_table->array[i] = NULL;
+    return (ha_table);
 }
