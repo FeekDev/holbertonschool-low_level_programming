@@ -6,8 +6,8 @@
 mandatory
 Requirements:
 
-name of the executable: school
-rules: all, clean, fclean, oclean, re
+💠 name of the executable: school
+  rules: all, clean, fclean, oclean, re
 all: builds your executable
 clean: deletes all Emacs and Vim temporary files along with the executable
 oclean: deletes the object files
